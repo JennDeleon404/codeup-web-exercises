@@ -9,12 +9,12 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 function sayHello(name){
-return 'hello ' + name;
+    return 'hello ' + name;
 }
 // This was my answer below:
 // function sayHello(name) {
    // alert("hello, " + name);
-   // var greeting = sayHello("codeUp");
+console.log(sayHello("codeUp"));
 //};
 //var greeting = sayHello('code up ');
 //console.log(greeting);
@@ -49,7 +49,7 @@ var random = Math.floor((Math.random() * 3) + 1);
  * The function should return a boolean value based on whether or not the passed
  * number is the number 2.
  *
- * Example
+*Example
  * > isTwo(1) // returns false
  * > isTwo(2) // returns true
  * > isTwo(3) // returns false
@@ -108,6 +108,7 @@ var bill = parseFloat(prompt("How much was the bill?"));
  */
 })();
 // Below is the answer for the unfinished work for the last question
-function applyDiscount(price, discountPercent){
-var discount = (price * discountPercent);
+function applyDiscount(price, discountPercent) {
+    var discount = (price * discountPercent);
+}
 console.log(applyDiscount(45.99, 0.12));

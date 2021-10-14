@@ -104,22 +104,26 @@ function calculateTotal(luckyNumber, totalAmount) {
             return (0 * totalAmount)
             break;
         case 1:
-            return (.10 * totalAmount)
+            return total - (.10 * totalAmount)
             break;
         case 2:
-            return (.25 * totalAmount)
+            return total - (.25 * totalAmount)
             break;
         case 3:
-            return (.35 * totalAmount)
+            return total - (.35 * totalAmount)
             break;
         case 4:
-            return (.50 * totalAmount)
+            return total - (.50 * totalAmount)
             break;
         case 5:
             return (0)
             break;
     }
 }
+// you can also get rid of the first line of luckyNumber 0 and
+// make the last line default:
+// return total;
+//break;
 
 /**
  * TODO:
@@ -131,10 +135,10 @@ function calculateTotal(luckyNumber, totalAmount) {
 //Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
 
-prompt("What is your total bill?")
-    {
 
-    }
+var userTotal = parseFloat(prompt("What is your total bill?"));
+//alert ("Your lucky number was " + luckyNumber + "Your total was " + userTotal + "your new total is " + (calculateTotal((luckyNumber, userTotal).tofixed(2)));
+
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -172,3 +176,7 @@ if (answer) {
         }
     }
 }
+function newNumber(price, discountPercent) {
+    var discount = (price * discountPercent);
+}
+console.log(applyDiscount(45.99, 0.12));

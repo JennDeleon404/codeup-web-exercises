@@ -1,7 +1,11 @@
-var hadBreakfast = Boolean(Math.round(Math.random()))
-if (hadBreakfast === true) {
-    return ("Great! Its the most important meal of the day!")
+function typeCheck(input){
+    if (typeof input === 'string'){
+        return "Haha tghats a string of a string"
+    }else{
+        return typeof input;
+    }
 }
-else {
-    return ("Oh no!")
-}
+console.log('');
+console.log(isNaN());
+typeCheck(!false * 3);
+typeCheck(4 + ‘4’);

@@ -21,9 +21,14 @@ for (var i = 1; i <= 10; i++) {
     }
 }
 //4.
-var count, more;
-for (count = 1; count >= 9; count++){
-    for (more = 1; more <= count; more++)
+//for (var more = 1; more <= 9; more++){
 
+//5.
+function countBackByFives(idk) {
+    for (var ok = 5; ok <= 100; ok--) {
+        var newWhatever = idk - ok;
+        console.log(ok  + newWhatever);
+    }
+    break;
 }
-
+countBackByFives(100)

@@ -1,19 +1,16 @@
 // Unit tests for the helloWorld function
-describe('helloWorld', function() {
+describe('helloWorld', function helloWorld() {
     it('should be a defined function', function() {
-      expect(typeof helloWorld).toBe('function');
+      expect(typeof helloWorld()).toEqual('function');
     });
-    it('should return a string when called', function() {
-      expect(typeof helloWorld("string")).toBe("string");
+    it('should return a string when called', function helloWorld() {
+      expect(typeof helloWorld()).toBe("string");
     });
     it('should return the string "Hello, World!" when executed', function() {
       expect(helloWorld()).toBe("Hello, World!");
     });
-    it("should never return 'undefined' when called", function() {
-      expect(helloWorld()).not.toBe(undefined);
-    });
 });
-describe("sayHello", function() {
+describe("sayHello", function sayHello() {
     it('should be a defined function', function(){
         expect(typeof sayHello).toBe('function');
     })
@@ -24,13 +21,13 @@ describe("sayHello", function() {
         expect(typeof sayHello()).toBe('string');
     })
     it('should return a greeting for the input', function(){
-        expect(sayHello('Jay')).toBe('Hello Jay!');
+        expect(sayHello('name')).toBe('Hello name!');
     })
 });
 //10.
-describe('isFive', function(){
-    it('isFive should return a boolean no matter the input', function(){
-        expect(typeof isFive("boolean")).toEqual('boolean');
+describe('isFive', function isFive(){
+    it('isFive should return a boolean no matter the input', function isFive(){
+        expect(typeof isFive("boolean")).toBe('boolean');
     })
     it('should return true when passed 5', function() {
         expect(isFive(5)).toBe(true)
@@ -40,7 +37,7 @@ describe('isFive', function(){
     })
 })
 //11.
-describe('isEven', function(){
+describe('isEven', function isEven(){
     it('should be defined as a function', function(){
         expect(typeof isEven).toEqual("function");
     })
@@ -73,7 +70,7 @@ describe('isEven', function(){
     })
 })
 //12.
-describe("isVowel", function(){
+describe("isVowel", function isVowel(){
     it('is a defined function', function(){
         expect(typeof isVowel).toBe("function");
     })

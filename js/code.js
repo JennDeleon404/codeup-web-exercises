@@ -1,9 +1,10 @@
 // helloWorld function 
 function helloWorld (){
-    return true;
+     console.log("Hello, World!";
+
 }
 function sayHello(){
-    return 'Hello Jay!';
+    return 'Hello name!';
 }
 function isFive(input){
     return true;

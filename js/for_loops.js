@@ -20,7 +20,17 @@ for (var i = 1; i <= 10; i++) {
         console.log(csc + " is odd");
     }
 }
-//4.
+// ^^ that's my answer, below is what was shown in class
+
+// showMultiplicationTable(7);
+//var randomNumber = math.floor(Math.random() * (180) + 20);
+//if (randomNumber % 2 === 0){
+//console.log(randomNumber + " is even number");
+//} else {
+//console.log(randomNumber + ' is an odd number.");
+//  }
+//}
+// ^^^^ That answer uses the showMultiplication from the previous question like I was supposed to.
 var x = "";
 for (var more = 1; more <= 9; more++) {
     for (var i = 1; i <= more; i++){

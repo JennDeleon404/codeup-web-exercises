@@ -21,14 +21,15 @@ for (var i = 1; i <= 10; i++) {
     }
 }
 //4.
-//for (var more = 1; more <= 9; more++){
-
-//5.
-function countBackByFives(idk) {
-    for (var ok = 5; ok <= 100; ok--) {
-        var newWhatever = idk - ok;
-        console.log(ok  + newWhatever);
+var x = "";
+for (var more = 1; more <= 9; more++) {
+    for (var i = 1; i <= more; i++){
+        x += more + "";
     }
-    break;
+    console.log(x);
+    x = ""
 }
-countBackByFives(100)
+//5.
+for (var ok = 100; ok >= 5; ok-= 5) {
+         console.log(ok);
+     }

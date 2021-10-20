@@ -27,6 +27,10 @@
      * string, and <li> tags around each planet.
      */
 
-    console.log(planetsArray.join());
-    console.log(planetsArray.join (", "));
+    var planetsWithBreakTags = planetsArray.join("<br>");
+    console.log (planetsWithBreakTags);
+
+    var unorderedList = "<ul><li>" + planetsArray.join("</li><li>") + "</li></ul>"
+    console.log(unorderedList);
+    document.write(unorderedList);
 })();

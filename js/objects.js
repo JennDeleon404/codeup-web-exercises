@@ -33,12 +33,12 @@ var name = {};
      */
 
     var sayHello = {};
-    sayHello.greeting = "Hello, ";
+    sayHello.greeting = "Hello, from ";
 
     name.sayHello = function(){
     console.log(sayHello.greeting + name.first + " " + name.last)
     };
-    name.sayHello("Hello" + name.first + " "+ "name.last");
+    name.sayHello(sayHello.greeting + name.first + " "+ "name.last");
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -54,12 +54,22 @@ var name = {};
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
-
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+function discount() {
+  if (shoppers.amount >= 200) {
+    return shoppers.amount - (.12 * shoppers.amount)
+    }
+  else {
+    shoppers.amount
+        }
+    }
+    console.log(discount())
+    //for (var more = 1; more <= 9; more++) {
+      //  for (var i = 1; i <= more; i++){
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author

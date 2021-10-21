@@ -12,15 +12,15 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    var name = {};
-    name.first = "Jennifer";
-    name.last = "Deleon";
+var name = {};
+  name.first = "Jennifer";
+  name.last = "Deleon";
 
-    name.fullName = function () {
-        console.log(name.first)
-        console.log(name.last)
-    };
-    name.fullName();
+  name.fullName = function () {
+      console.log(name.first)
+      console.log(name.last)
+  };
+  name.fullName();
 
     /**
      * TODO:
@@ -31,6 +31,14 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+
+    var sayHello = {};
+    sayHello.greeting = "Hello, ";
+
+    name.sayHello = function(){
+    console.log(sayHello.greeting + name.first + " " + name.last)
+    };
+    name.sayHello("Hello" + name.first + " "+ "name.last");
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to

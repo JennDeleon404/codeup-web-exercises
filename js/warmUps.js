@@ -1,3 +1,4 @@
+"use strict"
 // function typeCheck(input){
 //     if (typeof input === 'string'){
 //         return "Haha thats a string of a string"
@@ -25,7 +26,14 @@
 //     }
 // }
 
-function secondToLast (arr){
-    return arr(arr.length -3)
+// function secondToLast (arr){
+//     return arr(arr.length -3)
+// }
+// console.log(secondToLast(["1", "2", "3", "4", "5"]));
+
+function moveToEnd (arr){
+   var remove = arr.shift
+   arr.push (remove)
+   return arr;
 }
-console.log(secondToLast(["1", "2", "3", "4", "5"]));
+console.log(moveToEnd(arr[1, 2, 3, 4]));

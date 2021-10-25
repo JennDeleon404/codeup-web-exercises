@@ -5,41 +5,38 @@
     <title>Register With Us</title>
 </head>
 <body>
-<main>
-  <section>
-  <form method="POST" action="https://request-inspector.glitch.me/">
-    <label for="email">Email</label>
-    <input id="email" name="email" type="text">
-    <br>
-    <label for="password">Password</label>
-    <input id="password" name="password" type="password">
-  </section>
-  <section>
-    <p>
-    <h4>Tell us about yourself:<br></h4>
-      <textarea name="Bio"></textarea>
-    </p>
-  </section>
-  <section>
-    <h4>How did you hear about us?</h4>
-    <input type="radio" name="how" value="a">billboard<br>
-    <input type="radio" name="how" value="b">radio advertisement<br>
-    <input type="radio" name="how" value="c">internet advertisement<br>
-    <input type="radio" name="how" value="d">other<br>
-  </section>
-  <section>
-    <p>
-   <h4>What Kind of browser are you using?</h4>
-    </p>
-    <select name="web browser">
+    <main>
+      <form method="POST" action="https://request-inspector.glitch.me/">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="text">
+        <br>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+
+<section>
+  <h4>Tell us about yourself:<br></h4>
+  <label>
+    <textarea name="Bio"></textarea><br>
+  </label>
+  <b>How did you hear about us?</b><br>
+  <label>
+  <input type="radio" name="how" value="a">billboard<br>
+  <input type="radio" name="how" value="b">radio advertisement<br>
+  <input type="radio" name="how" value="c">internet advertisement<br>
+  <input type="radio" name="how" value="d">other<br>
+  </label>
+  <label for = "select">What Kind of browser are you using?</label>
+  <br>
+  <select name = "What browser?" id = "select">
       <option disabled selected value>--Select from the options down below--</option>
       <option value="Google Chrome">Google Chrome</option>
       <option value="Safari">Safari</option>
       <option value="Firefox">Firefox</option>
       <option value="Other">Other</option>
-    </select> <br>
+    </select>
+  <br>
     <input type="submit">
-  </section>
+</section>
   </form>
 </main>
 </body>

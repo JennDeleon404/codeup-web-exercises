@@ -30,10 +30,22 @@
 //     return arr(arr.length -3)
 // }
 // console.log(secondToLast(["1", "2", "3", "4", "5"]));
+//
+// function moveToEnd (arr){
+//    var remove = arr.shift
+//    arr.push (remove)
+//    return arr;
+// }
+// console.log(moveToEnd(arr[1, 2, 3, 4]));
+//
 
-function moveToEnd (arr){
-   var remove = arr.shift
-   arr.push (remove)
-   return arr;
-}
-console.log(moveToEnd(arr[1, 2, 3, 4]));
+
+var pokemon = [
+   {
+   name: "Squirtle",
+   type: "water",
+   weakness: "grass/electic",
+   attack: "water pulse"
+   },
+]
+console.log("My favorite Pokemon is " + pokemon[0].name + ", who is a " + pokemon[0].type + " type pokemon. One of his attacks is " + pokemon[0].attack)

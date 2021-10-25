@@ -42,10 +42,16 @@
 
 var pokemon = [
    {
-   name: "Squirtle",
-   type: "water",
-   weakness: "grass/electic",
-   attack: "water pulse"
-   },
+      name: "Squirtle",
+      number: "007",
+      type: "water",
+      weakness: "grass/electic",
+      attack: "water pulse",
+      description:{
+         looks: "Tiny turtle",
+         weight: "19.8 lbs",
+         height: '1 foot 8 inches tall'
+   }
+}
 ]
-console.log("My favorite Pokemon is " + pokemon[0].name + ", who is a " + pokemon[0].type + " type pokemon. One of his attacks is " + pokemon[0].attack)
+console.log("My favorite Pokemon is " + pokemon[0].name + ", who is a " + pokemon[0].type + " type pokemon. " + "He is number " + pokemon[0].number + "." + " One of his attacks is " + pokemon[0].attack +". " + "He is " + pokemon[0].description.height + ", " + pokemon[0].description.weight + " and he looks like a " + pokemon[0].description.looks)

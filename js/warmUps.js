@@ -54,4 +54,38 @@ var pokemon = [
    }
 }
 ]
-console.log("My favorite Pokemon is " + pokemon[0].name + ", who is a " + pokemon[0].type + " type pokemon. " + "He is number " + pokemon[0].number + "." + " One of his attacks is " + pokemon[0].attack +". " + "He is " + pokemon[0].description.height + ", " + pokemon[0].description.weight + " and he looks like a " + pokemon[0].description.looks)
+console.log("My favorite Pokemon is " + pokemon[0].name + ", who is a " + pokemon[0].type + " type pokemon. " + "He is number " + pokemon[0].number + "." + " One of his attacks is " + pokemon[0].attack +". " + "He is " + pokemon[0].description.height + ", " + pokemon[0].description.weight + " and he looks like a " + pokemon[0].description.looks);
+
+//Create a function that pulls in the array and returns only Canadian wrestlers
+
+var wrestlers = [
+   {
+      name: "Bret Hart",
+      nationality: "Canadian"
+   }, {
+      name: "Shawn Michaels",
+      nationality: "American"
+   }, {
+      name: "Christian Cage",
+      nationality: "Canadian"
+   }, {
+      name: "Keiji Mutoh",
+      nationality: "Japanese"
+   }, {
+      name: "Eddy Guerrero",
+      nationality: "American"
+   }, {
+      name: "Owen Hart",
+      nationality: "Canadian"
+   }
+];
+function canadianWrestlers (arr){
+   var bucket = [];
+   arr.forEach(function (element){
+   if (element.nationality === "Canadian"){
+      bucket.push(element);
+   }
+   });
+      return bucket;
+}
+console.log(canadianWrestlers(wrestlers));

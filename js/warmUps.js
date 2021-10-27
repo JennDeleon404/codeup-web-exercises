@@ -89,3 +89,13 @@ function canadianWrestlers (arr){
       return bucket;
 }
 console.log(canadianWrestlers(wrestlers));
+
+//find the area of
+// the circle and round it to the nearest
+// whole number using the math object
+
+var circle = {
+   radius: 36
+}
+var area = Math.round(Math.PI (Math.pow(circle.radius, 2)));
+console.log(area);

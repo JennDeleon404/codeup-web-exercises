@@ -1,5 +1,45 @@
 .fancy-header{
-    color:purple;
+    color: purple;
     text-align: center;
     text-decoration: underline;
 }
+h2{
+    color:#5072A7;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+body{
+    background-color: #c4aead;
+    background-image: url("../images/Abstract-Wave-on-transparent-PNG.png");
+    background-repeat: repeat;
+    font-family: 'Raleway', serif ;
+}
+
+ul {
+    list-style-type: square;
+}
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+#centerwrap {
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: #FF4500;
+}
+a:hover, a:active {
+    color: fuchsia;
+}
+
+.table-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*background-image: url("images/geometric.jpg");*/
+/*background-repeat: no-repeat;*/
+/*background-position:  center;*/

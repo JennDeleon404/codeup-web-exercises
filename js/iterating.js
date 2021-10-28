@@ -57,8 +57,8 @@ function second(arr){
     return arr[arr.length -1];
     }
         console.log(first([1, 2, 3, 4, 5]))// returns 1
-        console.log(second([1, 2, 3, 4, 5]) // returns 2
-        console.log(last([1, 2, 3, 4, 5]) // return 5
+        console.log(second([1, 2, 3, 4, 5])) // returns 2
+        console.log(last([1, 2, 3, 4, 5])) // return 5
 
 
 

@@ -5,3 +5,35 @@ body, html {
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
 }
+.informational{
+    color: blue;
+    background-color: lightblue;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+.success{
+    color: green;
+    background-color: lightgreen;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+.warning{
+    color: #fada5e;
+    background-color: #fdfd96;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+.error{
+    color: maroon;
+    background-color: palevioletred;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+.container{
+    padding: 30px;
+    margin: 10px auto;
+}

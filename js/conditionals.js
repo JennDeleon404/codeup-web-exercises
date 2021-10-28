@@ -18,32 +18,15 @@
  * console.logging the function's return value
  */
 function analyzeColor(color) {
-//     if (color === "blue")
-//     {
-//         return ( color + " is the color of my favorite berry!");
-//     }
-//      else if (color === "red")
-//      {
-//         return (color + " is the color of an apple.");
-//     }
-//     else if (color === "cyan")
-//     {
-//         return (color + " is a bluish green color.");
-//     }
-//         return (color + " is a color I know about.")
     switch(color){
         case "blue":
             return(color + " is the color of my favorite berry.")
-        break;
         case "red":
             return(color + " is the color of an apple.")
-        break;
         case "cyan":
             return(color + " is a bluish greenish color.")
-        break;
         default:
             return(color + " is a color I dont know about.")
-        break;
     }
 }
 console.log(analyzeColor("orange"))
@@ -56,19 +39,23 @@ console.log(analyzeColor("cyan"))
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
+
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+
 console.log(analyzeColor(randomColor))
+
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-// ^^ the switch answer is up there, I commented out the original answer
+// ^^ the switch answer is up there, I changed the original answer
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
@@ -98,28 +85,26 @@ var color = prompt("What is your favorite color?");
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+prompt("Enter a number from 0 -5")
 function calculateTotal(luckyNumber, totalAmount) {
     switch (luckyNumber) {
         case 0:
-            return (0 * totalAmount)
-            break;
+            return (0)
         case 1:
             return total - (.10 * totalAmount)
-            break;
         case 2:
             return total - (.25 * totalAmount)
-            break;
         case 3:
             return total - (.35 * totalAmount)
-            break;
         case 4:
             return total - (.50 * totalAmount)
-            break;
         case 5:
             return (0)
-            break;
     }
 }
+
+
+
 // you can also get rid of the first line of luckyNumber 0 and
 // make the last line default:
 // return total;
@@ -157,26 +142,26 @@ var userTotal = parseFloat(prompt("What is your total bill?"));
  */
 var answer = confirm("Would you like to enter a number between 0 to 6?")
 if (answer) {
-    var newNumber = parseFloat(prompt("Type in your number down below"))
-    if (isNaN(newNumber)) {
+    var newNumbers = parseFloat(prompt("Type in your number down below"))
+    if (isNaN(newNumbers)) {
         alert("That is not a number!")
     }
     else {
 
-        if (newNumber % 2 === 1) {
-            alert(newNumber + " is odd.")
+        if (newNumbers % 2 === 1) {
+            alert(newNumbers + " is odd.")
         } else {
-            alert(newNumber + " is even.")
+            alert(newNumbers + " is even.")
         }
-        alert("That number plus 100 is " + (newNumber + 100));
-        if (newNumber > 0) {
-            alert(newNumber + " is a positive number.")
+        alert("That number plus 100 is " + (newNumbers + 100));
+        if (newNumbers > 0) {
+            alert(newNumbers + " is a positive number.")
         } else {
-            alert(newNumber + " is a negative number.")
+            alert(newNumbers + " is a negative number.")
         }
     }
 }
 function newNumber(price, discountPercent) {
-    var discount = (price * discountPercent);
+    return (price * discountPercent);
 }
-console.log(applyDiscount(45.99, 0.12));
+console.log(newNumber(45.99, 0.12));

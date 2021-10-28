@@ -1,12 +1,12 @@
 // helloWorld function 
 function helloWorld (){
-     console.log("Hello, World!";
-
+    return "Hello, World!";
 }
+console.log (helloWorld())
 function sayHello(){
     return 'Hello name!';
 }
-function isFive(input){
+function isFive(){
     return true;
 }
 function isEven(){

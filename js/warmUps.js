@@ -94,8 +94,35 @@ console.log(canadianWrestlers(wrestlers));
 // the circle and round it to the nearest
 // whole number using the math object
 
-var circle = {
-   radius: 36
-}
-var area = Math.round(Math.PI (Math.pow(circle.radius, 2)));
-console.log(area);
+// var circle = {
+//    radius: 36
+// }
+// var area = Math.round(Math.PI (Math.pow(circle.radius, 2)));
+// console.log(area);
+//create a function that will return the largest quantity
+//from the given array
+var groceries = [
+   {
+      name: "carrots",
+      quantity: 5
+   },{
+      name: "yams",
+      quantity: 50
+   },{
+      name: "oranges",
+      quantity: 9
+   },{
+      name: "onions",
+      quantity: 2
+   },{
+      name: "cucumbers",
+      quantity: 6
+   },{
+      name: "potatoes",
+      quantity: 8
+   }
+];
+// function highestQuantity(arr){
+//    return arr;
+// }
+

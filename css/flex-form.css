@@ -56,8 +56,7 @@ body {
 }
 
 .destination {
-    text-align: center;
-    justify-content: center;
+    flex-basis: 15em;
 }
 
 /* TODO:

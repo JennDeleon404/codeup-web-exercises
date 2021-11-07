@@ -1,0 +1,57 @@
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+
+
+    .navbar{
+        display: flex;
+        background-color: #848487;
+    }
+    i {
+        margin-right: 10px;
+    }
+
+    .nav-item {
+        padding-top: 18px;
+        padding-bottom: 0;
+    }
+    .mobile-hide{
+        display:none;
+
+    }
+    .btn-primary {
+        float: right;
+    }
+    .checkout-footer {
+        min-height: 80em;
+    }
+
+}
+
+
+/* For desktop: */
+@media only screen and (min-width: 600px) {
+
+    .jumbotron {
+        background-repeat: no-repeat;
+    }
+
+    p {
+        display: flex;
+        background: white;
+        opacity: 0.75;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .container {
+        max-height: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+    .lead {
+        align-items: stretch;
+    }
+    .btn-primary {
+        position: absolute;
+        right: 450px;
+    }
+}

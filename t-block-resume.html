@@ -5,46 +5,91 @@
     <script src="https://kit.fontawesome.com/4cdf7e2310.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/t-block-resume-css.css">
     <title>T-block resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-<h1 style="color:darkblue">Applicant</h1>
+<h1 style="color:cornflowerblue">Applicant</h1>
 <h2>Software Developer</h2>
 <p class="opening">This is an area where you write what you are looking for in a company and what your goals are
     in your field. I'm
     trying to write a bunch of stuff to fill out this portion as much as I can so that I can make it look like a
-    paragraph and have multiple line. I think this might be enough, so I'm going to stp writing now! </p>
-<main class="container">
-    <section class="row-bg-secondary">
-        <div class="col-12 col-lg-12 col-sm-1 bg-primary text-light contact ">
-            <ul style="list-style-type: none;">
-                <li><i class="fas fa-phone"></i> 555-555-5555</li>
-                <li><i class="fas fa-envelope"></i> email@email.com</li>
-                <li><i class="fab fa-linkedin-in"></i> @linkedIn-user</li>
-                <li><i class="fab fa-github-square"></i> @github-user</li>
-            </ul>
+    paragraph and have multiple line. I think this might be enough, so I'm going to stop writing now! </p>
+
+<div class="container col text-white bg-dark contact">
+    <div class="row">
+        <div class="col-sm">
+            <i class="fas fa-phone"></i> 555-555-5555
         </div>
-    </section>
-        <!--Everything below the olive line-->
-        <hr style="height:2px;border-width:0;color:darkolivegreen;background-color:darkolivegreen">
-        <h3 style="color:blue">SKILLS AND ABILITIES</h3>
-        <ul>
-            <li>Html</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Bootstrap</li>
-        </ul>
+        <div class="col-sm">
+            <i class="fas fa-envelope"></i> email@email.com
+        </div>
+        <div class="col-sm">
+            <i class="fab fa-linkedin-in"></i> @linkedIn-user
+        </div>
+        <div class="col-sm">
+            <i class="fab fa-github-square"></i> @github-user
+        </div>
+    </div>
+</div>
+<hr style="height:2px;border-width:0;color:darkolivegreen;background-color:darkolivegreen">
+<!--Everything below the olive line-->
+<div class="container">
+    <div class="row">
+        <div class="col-med-4">
 
-        <h3 style="color:blue">ACADEMIC</h3>
-        <p> CodeUp; Full Stack Web Dev; Regulus cohort; October-April</p>
-        <h3 style="color:blue">PROFESSIONAL EXPERIENCE</h3>
-        <h5> JOB 1</h5>
-        <p>This is job one.</p>
-        <h5> JOB 2</h5>
-        <p>This is job two.</p>
-        <h5> JOB 3</h5>
-        <p>This is job three.</p>
+<h3 style="color:teal">SKILLS AND ABILITIES</h3>
+<ul>
+    <li>Html</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>Bootstrap</li>
+</ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-med-4">
+<h3 style="color:teal;">ACADEMIC</h3>
+<p> CodeUp;<br>
+    Full Stack Web Dev;<br>
+    Regulus cohort;<br>
+    October-April</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-med-4">
+<h3 style="color:teal">PROFESSIONAL EXPERIENCE</h3>
+<h5> JOB 1</h5>
+<p>This is job one.</p>
+<h5> JOB 2</h5>
+<p>This is job two.</p>
+<h5> JOB 3</h5>
+<p>This is job three.</p>
+        </div>
+    </div>
 
-</main>
+    <!--part that is to go to the right at medium-->
+    <div class="col">
+        <div class="col-med-4">
+    <h3 style="color:teal;">DEVELOPMENT PROJECTS</h3>
+    <h5>Project 1</h5>
+    <p>I made it work!</p>
+    <h5>Project 2</h5>
+    <p>I made this one work too!</p>
+    <h5>Project 3</h5>
+    <p>Somehow I made it work...</p>
+        </div>
+    </div>
+            <div class="col">
+                <div class="col-med-4">
+    <h3 style="color:teal;">AWARDS AND INVOLVEMENT</h3>
+    <h5>Award 1</h5>
+    <p>I finished CodeUp</p>
+        </div>
+    </div>
+
+</div>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

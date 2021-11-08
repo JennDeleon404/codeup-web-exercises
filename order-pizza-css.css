@@ -6,9 +6,6 @@
         display: flex;
         background-color: #848487;
     }
-    i {
-        margin-right: 10px;
-    }
 
     .nav-item {
         padding-top: 18px;
@@ -16,14 +13,8 @@
     }
     .mobile-hide{
         display:none;
+    }
 
-    }
-    .btn-primary {
-        float: right;
-    }
-    .checkout-footer {
-        min-height: 80em;
-    }
 
 }
 
@@ -35,13 +26,7 @@
         background-repeat: no-repeat;
     }
 
-    p {
-        display: flex;
-        background: white;
-        opacity: 0.75;
-        justify-content: center;
-        align-items: stretch;
-    }
+
     .container {
         max-height: fit-content;
         margin: 0;
@@ -49,9 +34,15 @@
     }
     .lead {
         align-items: stretch;
+        display: flex;
+        background: white;
+        opacity: 0.75;
+        justify-content: center;
+        width: available;
+
     }
-    .btn-primary {
-        position: absolute;
-        right: 450px;
+    .border{
+        border: solid gray;
     }
+
 }

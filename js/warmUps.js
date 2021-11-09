@@ -158,3 +158,55 @@ function sortByName(arr){
    });
 }
 console.log(sortByName(products));
+
+var bBallPlayers = [
+   {
+      name: "Hakeem Olajuwon",
+      height: 213
+   }, {
+      name: "Muggsy Bogues",
+      height: 160
+   }, {
+      name: "Chris Paul",
+      height: 183
+   }, {
+      name: "Bol Bol",
+      height: 218
+   }, {
+      name: "Moochie Norris",
+      height: 185
+   }, {
+      name: "Manu Ginobili",
+      height: 198
+   }
+
+];
+function lowestHeight(arr){
+
+   // Math.min(bBallPlayers[height[0]])
+   var check = {height: Number.MAX_VALUE};
+   arr.forEach(function (el) {
+      if (el.height < check.height) {
+         check = el;
+      }
+   });
+   return check;
+}
+console.log(check(bBallPlayers))
+
+// function lowest(arr) {
+//    var bucket = [];
+//    arr.forEach(function(e) {
+//
+//    });
+//    var lowest = Math.mon(bucket);
+//    var output;
+//    ar.forEach(function(e) {
+//       if (e.height === shortest) {
+//          output = e;
+//       }
+//    });
+//    return output;
+// }
+// console.log(lowest(bBallPlayers));
+

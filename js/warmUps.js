@@ -159,40 +159,40 @@ function sortByName(arr){
 }
 console.log(sortByName(products));
 
-var bBallPlayers = [
-   {
-      name: "Hakeem Olajuwon",
-      height: 213
-   }, {
-      name: "Muggsy Bogues",
-      height: 160
-   }, {
-      name: "Chris Paul",
-      height: 183
-   }, {
-      name: "Bol Bol",
-      height: 218
-   }, {
-      name: "Moochie Norris",
-      height: 185
-   }, {
-      name: "Manu Ginobili",
-      height: 198
-   }
-
-];
-function lowestHeight(arr){
-
-   // Math.min(bBallPlayers[height[0]])
-   var check = {height: Number.MAX_VALUE};
-   arr.forEach(function (el) {
-      if (el.height < check.height) {
-         check = el;
-      }
-   });
-   return check;
-}
-console.log(check(bBallPlayers))
+// var bBallPlayers = [
+//    {
+//       name: "Hakeem Olajuwon",
+//       height: 213
+//    }, {
+//       name: "Muggsy Bogues",
+//       height: 160
+//    }, {
+//       name: "Chris Paul",
+//       height: 183
+//    }, {
+//       name: "Bol Bol",
+//       height: 218
+//    }, {
+//       name: "Moochie Norris",
+//       height: 185
+//    }, {
+//       name: "Manu Ginobili",
+//       height: 198
+//    }
+//
+// ];
+// function lowestHeight(arr){
+//
+//    // Math.min(bBallPlayers[height[0]])
+//    var check = {height: Number.MAX_VALUE};
+//    arr.forEach(function (el) {
+//       if (el.height < check.height) {
+//          check = el;
+//       }
+//    });
+//    return check;
+// }
+// console.log(check(bBallPlayers))
 
 // function lowest(arr) {
 //    var bucket = [];
@@ -210,3 +210,33 @@ console.log(check(bBallPlayers))
 // }
 // console.log(lowest(bBallPlayers));
 
+
+
+var myCharacter = {
+   name: 'Me',
+   hitPoints: 100,
+   class: 'Warrior',
+   abilities: {
+      attack: function(obj) {
+         console.log([myCharacter.name + "used " + myCharacter.weapon.damage + "against" + "and caused " + "hitPoints" +  "damage"])
+      },
+   },
+   magicPoints: 0,
+   weapon: {
+      name: 'Silver Sabre',
+      damage: 16,
+      type: 'sword'
+   }
+}
+
+var enemy = {
+   name: 'Savage Orc',
+   hitPoints: 100,
+   class: 'Warrior',
+   magicPoints: 0,
+}
+
+
+
+console.log(["name" + "used " + "weapon" + "and caused " + "hitPoints" +  "damage"])
+enemy.sort

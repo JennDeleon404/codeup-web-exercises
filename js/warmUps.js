@@ -240,3 +240,10 @@ var enemy = {
 
 console.log(["name" + "used " + "weapon" + "and caused " + "hitPoints" +  "damage"])
 enemy.sort
+
+function randomRPS(arr) {
+   return arr[Math.floor(Math.random() * arr.length)];
+}
+const array = ['rock', 'paper', 'scissors'];
+const result = randomRPS(array);
+console.log(result)

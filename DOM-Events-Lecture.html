@@ -5,10 +5,73 @@
     <title>Dom Events Listeners</title>
 </head>
 <body>
+<style>
+    body {
+        background-color: green;
+    }
+
+</style>
+
 <!--
+The Document Object Model provides us with an Event Model (or interface) which allows
+us to listen to events that happen.
+
+addEventListener syntax
+target.addEventListener(type, listener);
+
+(function (){
+var moonText = document.querySelector('#moon-travel');
+var mainContent = document.querySelector('#main-content');
+
+moonText.addEventListener('click', function() {
+main content.style.backgroundImage = 'url ....';
+this.innerHTML = "blah blah";
+})
+
+CLICK EVENT: WHEN I CLICK ON THE H1 TEXT, THE BACKGROUND WILL CHANGE, AS WELL AS THE TEXT
+OF THE ELEMENT.
+
+mouse event
+var goku = document.querySelector('#goku");
+
+var gokuListener = function () {
+this.src = 'img ....';
+this.addEventListener(mouseout' function () {
+this.src = 'img ....'
+}
+
+HOW TO REMOVE EVENT LISTENER:
+
+goku.addEventListener('mouseenter', gokuListener);
+
+var gokuChill = function () {
+.removeEventListener('mouseenter', gokuListener);
+}
+
+})();
 
 
+MOUSE EVENTS:
 
+mouseover
+mouseclick
+mousehover
+
+
+KEYBOARD EVENTS:
+keyup
+keydown
+keypress
+
+see more at mozzila.org
+
+
+Below is how you write an IIFE :
+
+(function(){
+})();
+
+IIFE^^^^^^
 -->
 </body>
 </html>

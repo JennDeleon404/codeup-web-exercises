@@ -37,7 +37,7 @@
         mainHeader.innerHTML = "JavaScript is Cool";
 
         // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById("sub-header");
+        var subHeader = document.querySelector('#sub-header');
 
         // TODO: Set the text color of subHeader to blue
         subHeader.style.color = "blue";
@@ -48,7 +48,7 @@
         // TODO: Set text color on every other list item to grey
         // TODO: Set text color of li with dbid = 1 to blue
         for (var i=0; i<listItems.length; i++){
-            if (listItems[i].getAttribute("data-dbid")== 1){
+            if (listItems[i].getAttribute("data-dbid") == 1){
                 listItems[i].style.color = "blue";
             }else if (i % 2 == 0){
                 listItems[i].style.color = "grey";
@@ -61,6 +61,13 @@
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs[0].innerText = "Mission Accomplished!";
     })();
+
 </script>
+
+<button id="btn1">Button 1</button> <br><br>
+<button id="btn2">Button 2</button> <br><br>
+<button id="btn3">Button 3</button> <br><br>
+<button id="btn4">Button 4</button> <br><br>
+
 </body>
 </html>

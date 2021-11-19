@@ -247,3 +247,4 @@ function randomRPS(arr) {
 const array = ['rock', 'paper', 'scissors'];
 const result = randomRPS(array);
 console.log(result)
+

@@ -2,20 +2,16 @@
 
 $(document).ready(function() {
     // alert("Done loading DOM");
-    var planets = $('#li');
-    var mainHeader = $('h1.headers');
-    $('h1, p, li').css('background-color', 'lightblue');
-    $('#choices').css('background-color', 'green');
-    $('#planets').css({
-        fontSize: "20px",
-        color: "red"
+    $('.codeup').css({"border-color": "red",
+        "border-width":"1px",
+        "border-style":"solid"
     });
-
-
-    // li.css({
-    //     'color': 'blue',
-    //     'background-color': 'orange'
-
+    // $('#whatever').css('color','purple');
+    // $('h1, p, li').css('background-color', 'lightblue');
+    // $('#planets').css({
+    //     fontSize: "20px",
+    //     color: "red"
+    // });
 });
 
 

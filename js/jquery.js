@@ -1,5 +1,8 @@
 "use strict"
 
+alert($('h1').html());
+
+
 $(document).ready(function() {
     // alert("Done loading DOM");
     // $('.codeup').css({"border-color": "red",

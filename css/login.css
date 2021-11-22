@@ -13,6 +13,7 @@ form {
     /* This form should be separated from other elements by 1em */
     /* There must be 1em between the content and the border of this element */
     margin: 1em auto 1em auto;
+
 }
 
 fieldset {
@@ -73,7 +74,7 @@ fieldset {
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Calculate based on the padding of the `.btn` class */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
-    width: calc(100% - 4px);
+    width: calc(100% - 45px);
     padding: 4px 0;
     margin: .5em 0;
 }

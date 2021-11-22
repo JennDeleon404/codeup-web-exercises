@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astronomy</title>
+</head>
+<body class="codeup">
+<h1 id="btn">Lets talk Astronomy</h1>
+<div>
+    <p id="btn1">Whats your favorite planet out of these?</p>
+    <ul id="planets"> Check it out:<br><br>
+        <li>WASP-76b: The exoplanet that rains molten iron</li>
+        <br>
+        <li class="planetsNames">HD 189733 b: Showers of molten glass</li>
+        <br>
+        <li class="planetsNames">Gliese 1132b: The planet that grew a second atmosphere</li>
+        <br>
+        <li class="planetsNames">Earth.....the planet we live on</li>
+    </ul>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</body>
+<script src="/js/jquery.js"></script>
+<script>
+    $("h1").click(function () {
+        $("h1").css("background-color", "blue");
+    })
+
+    $(document).ready(function () {
+        $('p').dblclick(function () {
+            $(this).css("font-size", "18px");
+        })
+        //the one below doesnt work, why?
+        $('li').hover(function () {
+            $(this).css("color", "red");
+            $(this).css("color", "black");
+        })
+
+    });
+
+
+</script>
+
+
+</html>

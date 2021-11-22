@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!--<audio id="phony" src="mp3/hey-everybody-this-guy-is-a-great-big-phony (1).mp3"></audio>-->
+<script>
+    "use strict";
+    $(document).keyup(function(event) {
+        console.log(event.keyCode);
+    });
+
+    var cheats = {
+
+        37: 'left',
+        38: 'up',
+        39: 'right',
+        40: 'down',
+        65: 'a',
+        66: 'b',
+        13: 'enter'
+    };
+    var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'enter'];
+    var startOrder = 0;
+    document.addEventListener('keydown', function(x) {
+        var key = cheats[x.keyCode];
+        var correctOrder = konamiCode[startOrder];
+        if (key == correctOrder) {
+            startOrder++;
+            if (startOrder == konamiCode.length) {
+                const audio = new Audio("mp3/hey-everybody-this-guy-is-a-great-big-phony (1).mp3");
+                audio.play()
+                window.alert("You added 30 live. HOW DID YOU KNOW?!")
+                $('body').css('background-color', 'teal').css('color', 'purple').css('display', 'center');
+                $("body").after().html("<img src=\"https://c.tenor.com/ypqu0LJtiWMAAAAC/babu-seinfeld.gif\" width=\"518\" height=\"367.3758865248227\" alt=\"Babu Seinfeld GIF - Babu Seinfeld Finger GIFs\"'style='margin-left: 100px;'><h1 style='margin-left: 300px;'>CHEATER!</h1>");
+                {
+                }
+            }
+        }
+
+    });
+
+
+
+
+    //     var keycode = [];
+    //     var correctOrder = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+    // $(document).keyup(function(event){
+
+    //     if(keycode === correctOrder) {
+    //         alert('you gained 30 lives');
+    //     }
+    // });
+
+
+
+</script>
+</body>
+</html>

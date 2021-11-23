@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Konami Code</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <title>Dont follow directions</title>
 </head>
-<body>
-<h1>Konami Code</h1>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<body style="background-color: #0047AB">
+<h1 style="text-align: center; font-family: 'VT323', monospace; margin-top: 100px; font-size: 80px">Do NOT enter in the Konami cheat code</h1>
 <!--<audio id="phony" src="mp3/hey-everybody-this-guy-is-a-great-big-phony (1).mp3"></audio>-->
+<audio id="sound1" src="mp3/you need to leave.mp3" preload="auto"></audio>
+<button style="margin-left: 600px; background-color: #D22B2B;padding-block: 50px; padding-left: 30px; padding-right: 30px;" onclick="document.getElementById('sound1').play();">WARNING!!<br> DONT PUSH THIS BUTTON</button>
+
 <script>
     "use strict";
     $(document).keyup(function(event) {
@@ -33,9 +40,9 @@
             if (startOrder == konamiCode.length) {
                 const audio = new Audio("mp3/hey-everybody-this-guy-is-a-great-big-phony (1).mp3");
                 audio.play()
-                window.alert("You added 30 live. HOW DID YOU KNOW?!")
-                $('body').css('background-color', 'teal').css('color', 'purple').css('display', 'center');
-                $("body").after().html("<img src=\"https://c.tenor.com/ypqu0LJtiWMAAAAC/babu-seinfeld.gif\" width=\"518\" height=\"367.3758865248227\" alt=\"Babu Seinfeld GIF - Babu Seinfeld Finger GIFs\"'style='margin-left: 100px;'><h1 style='margin-left: 300px;'>CHEATER!</h1>");
+                window.alert("You added 30 lives. HOW DID YOU KNOW?!")
+                $('body').css('background-color', 'red').css('color', 'purple').css('display', 'center');
+                $("body").after().html("<img src=\"https://c.tenor.com/ypqu0LJtiWMAAAAC/babu-seinfeld.gif\" width=\"518\" height=\"367.3758865248227\" alt=\"Babu Seinfeld GIF - Babu Seinfeld Finger GIFs\" style='margin-left: 450px;'><h1 style='margin-left: 625px;'>CHEATER!</h1>");
                 {
                 }
             }
@@ -43,19 +50,19 @@
 
     });
 
-
-
-
-    //     var keycode = [];
-    //     var correctOrder = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-    // $(document).keyup(function(event){
-
-    //     if(keycode === correctOrder) {
-    //         alert('you gained 30 lives');
-    //     }
-    // });
-
-
+//    TRYING THIS CODE BELOW BUT IM MISSING SOMETHING!!
+//
+// function cheat() {
+//         var keycode = "";
+//         var correctOrder = ['38, 38, 40, 40, 37, 39, 37, 39, 66, 65'];
+//     $(document).keyup(function(event) {
+//         input += ("" + event.keyCode);
+//         if (keycode === correctOrder) {
+//             alert('you gained 30 lives');
+//         }
+//     })
+//     });
+//
 
 </script>
 </body>
